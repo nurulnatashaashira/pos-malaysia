@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "0c9dbaee-f560-44ee-94db-b321c3b8b45a",
+		"name": "Pos - calculate price",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37806255"
+	},
+	"item": [
+		{
+			"name": "https://www-api.pos.com.my/api/price",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "www-api.pos.com.my",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "country",
+							"value": "Malaysia",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "0.1",
+							"type": "text"
+						},
+						{
+							"key": "postcodeFrom",
+							"value": "35600",
+							"type": "text"
+						},
+						{
+							"key": "postcodeTo",
+							"value": "70594",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www-api.pos.com.my/api/price",
+					"protocol": "https",
+					"host": [
+						"www-api",
+						"pos",
+						"com",
+						"my"
+					],
+					"path": [
+						"api",
+						"price"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
