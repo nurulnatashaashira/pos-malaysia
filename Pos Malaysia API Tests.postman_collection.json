@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "91aee433-5b0e-4acc-9068-c8e69cab51d3",
+		"name": "Pos Malaysia API Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37806255"
+	},
+	"item": [
+		{
+			"name": "https://www-api.pos.com.my/api/countries",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "www-api.pos.com.my",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://www-api.pos.com.my/api/countries",
+					"protocol": "https",
+					"host": [
+						"www-api",
+						"pos",
+						"com",
+						"my"
+					],
+					"path": [
+						"api",
+						"countries"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
